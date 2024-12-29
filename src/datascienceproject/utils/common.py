@@ -6,17 +6,17 @@ from ensure import ensure_annotations
 import joblib
 import json
 from box.exceptions import BoxValueError
-import Path
+from pathlib import Path
 from typing import Any
 
 @ensure_annotations
-def reed_yaml(filename: Path) -> ConfigBox:
+def read_yaml(filename: Path) -> ConfigBox:
     
     try:
         with open(filename, 'r') as file:
-            cotent = yaml.safe_load(file)
-            logger.info("yaml file -> {filename} loadded successfuly")
-            return ConfigBox(cotent)
+            content = yaml.safe_load(file)
+            logger.info(f"yaml file -> {filename} loadded successfuly")
+            return ConfigBox(content)
     except BoxValueError:
         raise ValueError('yaml file is empty')
     except Exception as e:
@@ -26,7 +26,7 @@ def reed_yaml(filename: Path) -> ConfigBox:
 def create_directory(path_to_directory: list, verbose=True):
     
     for path in path_to_directory:
-        os.makedirs(path, exicts_ok=True)
+        os.makedirs(path, exist_ok=True)
         if verbose:
             logger.info(f'created directory at {path}')
             
