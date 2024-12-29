@@ -11,3 +11,7 @@ data_validation:
   root_dir: artificts/data_validation
   unzip_data_file: artificts/data_ingestion/winequality-red.csv
   STATUS_file: artificts/data_validation/status.txt
+
+data_transformation:
+  root_dir: artificts/data_transformation
+  data_path: artificts/data_ingestion/winequality-red.csv

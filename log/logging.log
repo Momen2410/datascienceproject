@@ -1,70 +1,31 @@
-[2024-12-29 14:36:49,309: INFO: main: >>>>>>>>  Data Ingestion Stage starting <<<<<<<<]
-[2024-12-29 14:36:49,313: INFO: common: yaml file -> config/config.yaml loadded successfuly]
-[2024-12-29 14:36:49,325: INFO: common: yaml file -> schema.yaml loadded successfuly]
-[2024-12-29 14:36:49,331: INFO: common: yaml file -> params.yaml loadded successfuly]
-[2024-12-29 14:36:49,333: INFO: common: created directory at artificts]
-[2024-12-29 14:36:49,336: INFO: common: created directory at artificts/data_ingestion]
-[2024-12-29 14:36:51,447: INFO: data_ingestion: artificts/data_ingestion/data.zip successfully downloded!]
-[2024-12-29 14:36:52,229: INFO: main: >>>>>>>>  Data Ingestion Stage completed <<<<<<<<
+[2024-12-29 15:30:30,913: INFO: main: >>>>>>>>  Data Ingestion Stage starting <<<<<<<<]
+[2024-12-29 15:30:30,924: INFO: common: yaml file -> config/config.yaml loadded successfuly]
+[2024-12-29 15:30:30,932: INFO: common: yaml file -> schema.yaml loadded successfuly]
+[2024-12-29 15:30:30,939: INFO: common: yaml file -> params.yaml loadded successfuly]
+[2024-12-29 15:30:30,969: INFO: common: created directory at artificts]
+[2024-12-29 15:30:30,972: INFO: common: created directory at artificts/data_ingestion]
+[2024-12-29 15:30:32,691: INFO: data_ingestion: artificts/data_ingestion/data.zip successfully downloded!]
+[2024-12-29 15:30:33,406: INFO: main: >>>>>>>>  Data Ingestion Stage completed <<<<<<<<
 
 x=============x]
-[2024-12-29 14:36:52,230: INFO: main: >>>>>>>>  Data Validation Stage starting <<<<<<<<]
-[2024-12-29 14:36:52,244: INFO: common: yaml file -> config/config.yaml loadded successfuly]
-[2024-12-29 14:36:52,253: INFO: common: yaml file -> schema.yaml loadded successfuly]
-[2024-12-29 14:36:52,260: INFO: common: yaml file -> params.yaml loadded successfuly]
-[2024-12-29 14:36:52,262: INFO: common: created directory at artificts]
-[2024-12-29 14:36:52,264: INFO: common: created directory at artificts/data_validation]
-[2024-12-29 14:36:52,265: ERROR: main: 'DataValidation' object has no attribute 'validate_data']
-Traceback (most recent call last):
-  File "/mnt/d/Me/Ai/NLP/Krish Naik/end-to-end-ds/datascienceproject/datascienceproject/main.py", line 24, in <module>
-    obj.initiate_data_validation()
-  File "/mnt/d/Me/Ai/NLP/Krish Naik/end-to-end-ds/datascienceproject/datascienceproject/src/datascienceproject/pipeline/data_validation_pipeline.py", line 17, in initiate_data_validation
-    data_validation.validate_data()
-AttributeError: 'DataValidation' object has no attribute 'validate_data'
-[2024-12-29 14:38:37,588: INFO: main: >>>>>>>>  Data Ingestion Stage starting <<<<<<<<]
-[2024-12-29 14:38:37,593: INFO: common: yaml file -> config/config.yaml loadded successfuly]
-[2024-12-29 14:38:37,598: INFO: common: yaml file -> schema.yaml loadded successfuly]
-[2024-12-29 14:38:37,602: INFO: common: yaml file -> params.yaml loadded successfuly]
-[2024-12-29 14:38:37,604: INFO: common: created directory at artificts]
-[2024-12-29 14:38:37,608: INFO: common: created directory at artificts/data_ingestion]
-[2024-12-29 14:38:37,611: INFO: data_ingestion: file already exists]
-[2024-12-29 14:38:37,636: INFO: main: >>>>>>>>  Data Ingestion Stage completed <<<<<<<<
+[2024-12-29 15:30:33,408: INFO: main: >>>>>>>>  Data Validation Stage starting <<<<<<<<]
+[2024-12-29 15:30:33,425: INFO: common: yaml file -> config/config.yaml loadded successfuly]
+[2024-12-29 15:30:33,433: INFO: common: yaml file -> schema.yaml loadded successfuly]
+[2024-12-29 15:30:33,438: INFO: common: yaml file -> params.yaml loadded successfuly]
+[2024-12-29 15:30:33,442: INFO: common: created directory at artificts]
+[2024-12-29 15:30:33,444: INFO: common: created directory at artificts/data_validation]
+[2024-12-29 15:30:33,970: INFO: main: >>>>>>>>  Data Validation Stage completed <<<<<<<<
 
 x=============x]
-[2024-12-29 14:38:37,636: INFO: main: >>>>>>>>  Data Validation Stage starting <<<<<<<<]
-[2024-12-29 14:38:37,641: INFO: common: yaml file -> config/config.yaml loadded successfuly]
-[2024-12-29 14:38:37,646: INFO: common: yaml file -> schema.yaml loadded successfuly]
-[2024-12-29 14:38:37,650: INFO: common: yaml file -> params.yaml loadded successfuly]
-[2024-12-29 14:38:37,652: INFO: common: created directory at artificts]
-[2024-12-29 14:38:37,655: INFO: common: created directory at artificts/data_validation]
-[2024-12-29 14:38:37,656: ERROR: data_validation: Error occurred while validating columns: name 'pd' is not defined]
-[2024-12-29 14:38:37,656: ERROR: main: name 'pd' is not defined]
-Traceback (most recent call last):
-  File "/mnt/d/Me/Ai/NLP/Krish Naik/end-to-end-ds/datascienceproject/datascienceproject/main.py", line 24, in <module>
-    obj.initiate_data_validation()
-  File "/mnt/d/Me/Ai/NLP/Krish Naik/end-to-end-ds/datascienceproject/datascienceproject/src/datascienceproject/pipeline/data_validation_pipeline.py", line 17, in initiate_data_validation
-    data_validation.validat_all_columns()
-  File "/mnt/d/Me/Ai/NLP/Krish Naik/end-to-end-ds/datascienceproject/datascienceproject/src/datascienceproject/components/data_validation.py", line 31, in validat_all_columns
-    raise e
-  File "/mnt/d/Me/Ai/NLP/Krish Naik/end-to-end-ds/datascienceproject/datascienceproject/src/datascienceproject/components/data_validation.py", line 14, in validat_all_columns
-    data = pd.read_csv(self.config.unzip_data_file)
-NameError: name 'pd' is not defined
-[2024-12-29 14:39:29,450: INFO: main: >>>>>>>>  Data Ingestion Stage starting <<<<<<<<]
-[2024-12-29 14:39:29,525: INFO: common: yaml file -> config/config.yaml loadded successfuly]
-[2024-12-29 14:39:29,535: INFO: common: yaml file -> schema.yaml loadded successfuly]
-[2024-12-29 14:39:29,540: INFO: common: yaml file -> params.yaml loadded successfuly]
-[2024-12-29 14:39:29,543: INFO: common: created directory at artificts]
-[2024-12-29 14:39:29,547: INFO: common: created directory at artificts/data_ingestion]
-[2024-12-29 14:39:29,549: INFO: data_ingestion: file already exists]
-[2024-12-29 14:39:29,569: INFO: main: >>>>>>>>  Data Ingestion Stage completed <<<<<<<<
-
-x=============x]
-[2024-12-29 14:39:29,569: INFO: main: >>>>>>>>  Data Validation Stage starting <<<<<<<<]
-[2024-12-29 14:39:29,573: INFO: common: yaml file -> config/config.yaml loadded successfuly]
-[2024-12-29 14:39:29,578: INFO: common: yaml file -> schema.yaml loadded successfuly]
-[2024-12-29 14:39:29,582: INFO: common: yaml file -> params.yaml loadded successfuly]
-[2024-12-29 14:39:29,585: INFO: common: created directory at artificts]
-[2024-12-29 14:39:29,587: INFO: common: created directory at artificts/data_validation]
-[2024-12-29 14:39:29,673: INFO: main: >>>>>>>>  Data Validation Stage completed <<<<<<<<
+[2024-12-29 15:30:33,971: INFO: main: >>>>>>>>  Data Transformation Stage starting <<<<<<<<]
+[2024-12-29 15:30:33,974: INFO: common: yaml file -> config/config.yaml loadded successfuly]
+[2024-12-29 15:30:33,979: INFO: common: yaml file -> schema.yaml loadded successfuly]
+[2024-12-29 15:30:33,982: INFO: common: yaml file -> params.yaml loadded successfuly]
+[2024-12-29 15:30:33,984: INFO: common: created directory at artificts]
+[2024-12-29 15:30:33,986: INFO: common: created directory at artificts/data_transformation]
+[2024-12-29 15:30:34,659: INFO: data_transformation: splitting to train and test --> Done]
+[2024-12-29 15:30:34,661: INFO: data_transformation: (1199, 12)]
+[2024-12-29 15:30:34,662: INFO: data_transformation: (400, 12)]
+[2024-12-29 15:30:34,664: INFO: main: >>>>>>>>  Data Transformation Stage completed <<<<<<<<
 
 x=============x]

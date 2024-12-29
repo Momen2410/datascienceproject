@@ -1,6 +1,7 @@
 from src.datascienceproject import logger
 from src.datascienceproject.pipeline.data_ingestion_pipeline import DataIngestionTrainingPipline
 from src.datascienceproject.pipeline.data_validation_pipeline import DataValidationTrainingPipline
+from src.datascienceproject.pipeline.data_transformation_pipeline import DataTransformationPipeline
 import ssl
 ssl._create_default_https_context = ssl._create_unverified_context
 
@@ -22,6 +23,17 @@ try:
     logger.info(f'>>>>>>>>  {STAGE} starting <<<<<<<<')
     obj = DataValidationTrainingPipline()
     obj.initiate_data_validation()
+    logger.info(f'>>>>>>>>  {STAGE} completed <<<<<<<<\n\nx=============x')
+except Exception as e:
+    logger.exception(e)
+    raise e
+
+
+STAGE = 'Data Transformation Stage'
+try:
+    logger.info(f'>>>>>>>>  {STAGE} starting <<<<<<<<')
+    obj = DataTransformationPipeline()
+    obj.initiate_data_transformation()
     logger.info(f'>>>>>>>>  {STAGE} completed <<<<<<<<\n\nx=============x')
 except Exception as e:
     logger.exception(e)
